@@ -157,6 +157,9 @@ tr,td{
     padding: 0 20%;
     
    }
+   table img{
+        width: 100%;
+   }
 }
 
 @media (min-width: 1024px){
@@ -188,4 +191,8 @@ tr,td{
     section img{
         width: 50%;
     }
+
+    table img{
+        width: 100%;
+   }
 }
