@@ -3,6 +3,7 @@
 #_pic{
     size-adjust: 80%;
     width: 100%;
+    align-self: center;
 }
 #row {
     display: flex;
@@ -35,6 +36,25 @@
     flex-direction: column;
     flex-basis: 100%;
     line-height: 100%;
+    padding: 5px;
+    width: 50%;
+    border: 4px solid #352C14;
+    font-size: 1.6em;
+}
+.col2 ul{
+    text-align:left;
+    padding: 0 30%;
+    list-style-position:inside;
+}
+.col2 .button {
+    font-size: 1.0em;
+}
+.col3 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    line-height: 120%;
     padding: 5px;
     width: 50%;
     border: 4px solid #352C14;
@@ -136,11 +156,14 @@ h4 {
 
 p {
     font-size: 1.2em;
+    
 }
 p2 {
+    font-family: "Nunito", serif;
     margin: 0 5px;
     padding: 5px;
     font-size: .8em;
+    
 }
 ul {
     font-size: 1.1em;
@@ -150,6 +173,7 @@ h1,h2,h3 {
 }
 
 main {
+    font-family: "Nunito", serif;
     padding: 10px;
     background-color: #FFFCC0;
     
@@ -165,8 +189,8 @@ footer {
 .button {
     display: block;
     background-color: #75750B;
-    width: 60%;
-    height: 40px;
+    width: fit-content;
+    height: fit-content;
     line-height: 100%;
     font-size: 1.2em;
     font-weight: bold;
@@ -233,52 +257,121 @@ td .button{
     main ul {
         font-size: 1.75em;
     }
+    #_pic{
+        
+        size-adjust: 100%;
+        width: 100%;
+    }
+    #_pic2{
+        size-adjust: 30%;
+        width: 65%;
+    }
+    
     #row {
      
         width: 97.5%;
       
     }
     h3 {
-        font-size: 1.0em;
+        font-size: 1.5em;
     }
+    
     .col {
-        width: fit-content;
+        width: 50%;
         flex: 1;
         font-size: 1.2em;
     }
-    .col img {
-        width: 75%;
+    .col h3 {
+        
+        font-size: .9em;
+        height: 30px;
+
     }
     .col ul {
         font-size: 1.0em;
         padding: 0 10%;
     }
+    .col2 {
+        flex: 1;
+        font-size: 2.1em;
+    }
+
+    .col2 ul{
+        font-size: 1.0em;
+        line-height: 90%;
+        padding: 0 40%;
+    }
+    .col3{
+        flex: 1;
+        font-size: 1.5em;
+        line-height: 125%;
+
+    }
+    .col3 ul{
+        font-size: 1.0em;
+        
+    }
+    .col3 h4{
+        font-size: 1.0em;
+    }
     
   }
 
   @media screen and (min-width: 1024px) {
-    
+    main p2 {
+        font-size: 1.8em;
+    }
+    main ul {
+        padding: 0 20%;
+    }
+    h2 {
+        font-size: 3.0em;
+    }
+    h3 {
+        font-size: 2.5em;
+    }
+    #row{
+        width: 99%;
+    }
     .col {
-        flex: 1;
-        font-size: 1.2em;
+        font-size: 2.3em;
+    }
+    .col h3{
+        font-size: .9em;
         
 
+    }
+    .col2 h3 {
+        font-size: 1.0em;
     }
     .col2 {
         flex: 1;
-        font-size: 1.2em;
+        font-size: 3.0em;
+        
         
 
     }
+    .col2 ul{
+        
+        font-size: 1.0em;
+        padding:  0 40%;
+
+    }
+    .col3{
+        line-height: 225%;
+    }
+    .col3 h4{
+        font-size: 2.0em;
+    }
     .col ul {
         font-size: 1.0em;
-        padding: 0 20%;
+        padding: 0 25%;
     }
     .product_container{
         size: 100% 100%;
         display: block;
 
-        font-size: 2em;
+        font-size: 1.0em;
     }
 
     .button{
@@ -286,7 +379,10 @@ td .button{
         line-height: 50px;
     }
 
-    
+    #_pic2{
+        size-adjust: 10%;
+        width: 45%;
+    }
     .single_page {
         width: 100%;
     }
@@ -296,7 +392,7 @@ td .button{
     }
 
     table img{
-        width: 75%;
+        width: 50%;
    }
    table {
     width: 100%;
