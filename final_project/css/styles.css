@@ -1,38 +1,20 @@
-#col_area {
-    display: flex;
-    text-align: left;
 
 
+#_pic{
+    size-adjust: 80%;
+    width: 100%;
 }
-
-#col_area_2 {
-    display: flex;
-    text-align: left;
- 
-}
-
-#col_area_3 {
-    display: flex;
-    text-align: left;
-    text-align: left;
-    background-color: #38490D;
-    color: white;
-    border: 4px solid #9FAA17;
-    overflow-y: auto;
-
-}
-
 #row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 100%;
+    width: 95%;
     text-align: center;
-
+    padding: 5px;
     background-color: #38490D;
     color: white;
     border: 4px solid #9FAA17;
-    overflow-y: auto;
+   
 
 }
 .col {
@@ -40,24 +22,37 @@
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
+    
+    line-height: 100%;
     padding: 5px;
     width: 50%;
     border: 4px solid #352C14;
-    font-size: 1.5em;
+    font-size: 1.8em;
+}
+.col2 {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    line-height: 100%;
+    padding: 5px;
+    width: 50%;
+    border: 4px solid #352C14;
+    font-size: 1.4em;
 }
 .col ul {
-    text-align: center;
-    list-style-position: inside;
+    text-align:left;
+    padding: 0 30%;
+    list-style-position:inside;
 }
 
 .col img{
     width: 100%;
 }
 .col .button {
-    font-size: 1.0em;
     line-height: 80%;
- 
-    padding-bottom: 3px;
+    
+    font-size: .9em;
 }
 body{
     background-color: #352C14;
@@ -71,6 +66,8 @@ img {
 
 #container {
     background-color: #FFFCC0;
+   
+    
 }
 nav {
     background-color: #75750B;
@@ -103,17 +100,62 @@ nav li a:hover {
     color: white;
     border-color: #75750B;
 }
+header{
+    background-color: #75750B;
+}
+h1 {
+    color: white;
+}
+h2 {
+    color: white;
+    background-color: #38490D;
+    border: 4px solid #75750B;
+    padding: 10px;
+    font-size: 2.0em;
+    text-align: center;
+        
+}
+h3 {
+    background-color: #75750B;
+    border: 4px solid #38490D;
+    font-size: 1.5em;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    line-height: 100%;
 
+}
+h4 {
+    text-align: center;
+    background-color: #75750B;
+    border: 4px solid #38490D;
+    font-size: .8em;
+    padding: 10px;
+    color: white;
+}
+
+p {
+    font-size: 1.2em;
+}
+p2 {
+    margin: 0 5px;
+    padding: 5px;
+    font-size: .8em;
+}
+ul {
+    font-size: 1.1em;
+}
 h1,h2,h3 {
     text-align: center;
 }
 
 main {
     padding: 10px;
+    background-color: #FFFCC0;
     
 }
 footer {
-    background-color: #38490D;
+    background-color: #75750B;
     color: white;
     font-weight: bold;
     text-align: center;
@@ -143,28 +185,120 @@ footer {
 }
 
 table{
-    text-align: left;
+    width: 100%;
     background-color: #38490D;
     color: white;
-    border: 4px solid #9FAA17;
+    
+}
+table img {
+    width: 50%;
+    object-fit:fill;
+    object-position: 0px 5px;
 }
 tr {
-    background-color: #75750B;
+    border: 4px solid #38490D;
+
 }
 td {
-    
-    width: 25%;
+    border: 5px solid #9FAA17;
+
 }
 td .button{
-    height: 50%;
+    height: fit-content;
     line-height: 100%;
     font-size: 1.2em;
 }
 
 
 @media screen and (min-width: 800px) {
-    .col {
-      flex: 2
+   
+    
+    nav li{
+        font-size: 1.0em;
+        display: inline-block;
+        border: 0;
     }
-  
+    nav li a{
+        padding: 5px 5px;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+
+        border-radius: 10px;
+        border: 4px solid #9FAA17;
+    }
+    main p {
+        font-size: 1.75em;
+    }
+    main ul {
+        font-size: 1.75em;
+    }
+    #row {
+     
+        width: 97.5%;
+      
+    }
+    h3 {
+        font-size: 1.0em;
+    }
+    .col {
+        width: fit-content;
+        flex: 1;
+        font-size: 1.2em;
+    }
+    .col img {
+        width: 75%;
+    }
+    .col ul {
+        font-size: 1.0em;
+        padding: 0 10%;
+    }
+    
+  }
+
+  @media screen and (min-width: 1024px) {
+    
+    .col {
+        flex: 1;
+        font-size: 1.2em;
+        
+
+    }
+    .col2 {
+        flex: 1;
+        font-size: 1.2em;
+        
+
+    }
+    .col ul {
+        font-size: 1.0em;
+        padding: 0 20%;
+    }
+    .product_container{
+        size: 100% 100%;
+        display: block;
+
+        font-size: 2em;
+    }
+
+    .button{
+        height: fit-content;
+        line-height: 50px;
+    }
+
+    
+    .single_page {
+        width: 100%;
+    }
+
+    section img{
+        width: 50%;
+    }
+
+    table img{
+        width: 75%;
+   }
+   table {
+    width: 100%;
+   }
   }
