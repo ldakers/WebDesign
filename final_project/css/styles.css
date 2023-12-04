@@ -1,7 +1,6 @@
 
 
 ._pic{
-    size-adjust: 80%;
     width: 100%;
     align-self: center;
 }
@@ -17,7 +16,7 @@ video {
     height: 100%;
     width: 100%;
 }
-#row {
+.row {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -269,13 +268,11 @@ td .button{
     main ul {
         font-size: 1.75em;
     }
-    #_pic{
+    ._pic{
         
-        size-adjust: 100%;
         width: 100%;
     }
-    #_pic2{
-        size-adjust: 30%;
+    ._pic2{
         width: 65%;
     }
     video{
@@ -286,7 +283,7 @@ td .button{
         height: 10%;
         width: 10%;
     }
-    #row {
+    .row {
      
         width: 97.5%;
       
@@ -357,7 +354,7 @@ td .button{
     h3 {
         font-size: 2.5em;
     }
-    #row{
+    .row{
         width: 99%;
     }
     .col {
@@ -405,10 +402,10 @@ td .button{
         height: fit-content;
         line-height: 50px;
     }
-    #_pic{
+    ._pic{
         width: 50%;
     }
-    #_pic2{
+    ._pic2{
         size-adjust: 10%;
         width: 45%;
     }
