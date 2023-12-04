@@ -71,6 +71,9 @@ video {
     border: 4px solid #352C14;
     font-size: 1.4em;
 }
+.col3 p {
+    font-size: 1.0em;
+}
 .col ul {
     text-align:left;
     padding: 0 30%;
@@ -325,9 +328,10 @@ td .button{
     }
     .col3 p {
         line-height: 100%;
+        font-size: 1.3em;
     }
     .col3 ul{
-        font-size: 1.0em;
+        font-size: 1.3em;
         
     }
     .col3 h4{
@@ -382,7 +386,11 @@ td .button{
 
     }
     .col3{
+        font-size: 1.5em;
         line-height: 225%;
+    }
+    .col3 p {
+        font-size: 1.7em;
     }
     .col3 h4{
         font-size: 2.0em;
