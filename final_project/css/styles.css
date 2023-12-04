@@ -392,7 +392,6 @@ td .button{
         padding: 0 25%;
     }
     .product_container{
-        size: 100% 100%;
         display: block;
 
         font-size: 1.0em;
@@ -406,7 +405,6 @@ td .button{
         width: 50%;
     }
     ._pic2{
-        size-adjust: 10%;
         width: 45%;
     }
     audio {
