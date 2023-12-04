@@ -5,6 +5,18 @@
     width: 100%;
     align-self: center;
 }
+audio {
+    display: block;
+    margin: 0 auto;
+    width: 2%;
+    height: 20%;
+}
+video {
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+}
 #row {
     display: flex;
     flex-direction: row;
@@ -138,7 +150,7 @@ h2 {
 h3 {
     background-color: #75750B;
     border: 4px solid #38490D;
-    font-size: 1.5em;
+    font-size: 1.4em;
     padding: 10px;
     color: white;
     text-align: center;
@@ -266,7 +278,14 @@ td .button{
         size-adjust: 30%;
         width: 65%;
     }
-    
+    video{
+        height: 75%;
+        width: 75%;
+    }
+    audio {
+        height: 10%;
+        width: 10%;
+    }
     #row {
      
         width: 97.5%;
@@ -303,9 +322,12 @@ td .button{
     }
     .col3{
         flex: 1;
-        font-size: 1.5em;
+        font-size: 1.4em;
         line-height: 125%;
 
+    }
+    .col3 p {
+        line-height: 100%;
     }
     .col3 ul{
         font-size: 1.0em;
@@ -314,7 +336,12 @@ td .button{
     .col3 h4{
         font-size: 1.0em;
     }
-    
+    .col2 h3 {
+        font-size: 1.3em;
+    }
+    footer {
+        font-size: 1.5em;
+    }
   }
 
   @media screen and (min-width: 1024px) {
@@ -346,14 +373,14 @@ td .button{
     }
     .col2 {
         flex: 1;
-        font-size: 3.0em;
+        font-size: 2.5em;
         
         
 
     }
     .col2 ul{
         
-        font-size: 1.0em;
+        font-size: .9em;
         padding:  0 40%;
 
     }
@@ -378,10 +405,20 @@ td .button{
         height: fit-content;
         line-height: 50px;
     }
-
+    #_pic{
+        width: 50%;
+    }
     #_pic2{
         size-adjust: 10%;
         width: 45%;
+    }
+    audio {
+        height: 5%;
+        width: 5%;
+    }
+    video {
+        height: 50%;
+        width: 50%;
     }
     .single_page {
         width: 100%;
